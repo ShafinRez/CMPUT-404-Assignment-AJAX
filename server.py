@@ -78,6 +78,7 @@ def hello():
     '''Return something coherent here.. perhaps redirect to /static/index.html '''
     return redirect("./static/index.html")
 
+# documentation used to understand jsonify: https://www.kite.com/python/docs/flask.jsonify
 @app.route("/entity/<entity>", methods=['POST','PUT'])
 def update(entity):
     '''update the entities via this interface'''
